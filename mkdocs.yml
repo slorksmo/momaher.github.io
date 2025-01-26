@@ -33,6 +33,7 @@ theme:
     tabs: false
   language: 'en'
   direction: 'ltr'
+  copyright: false
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
