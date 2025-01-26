@@ -25,17 +25,42 @@ theme:
     text: 'Merriweather Sans'
     code: 'Red Hat Mono'
   icon:
-    logo: null
-    repo: null
-  favicon: null
-  logo: null
+    logo: 'images/logo.png'  # Path to your logo image
+    repo: fontawesome/brands/github
+  favicon: 'images/favicon.ico'  # Path to your favicon
+  logo: 'images/logo.png'  # Path to your logo image
   feature:
-    tabs: false
+    tabs: true
   language: 'en'
   direction: 'ltr'
-  copyright: false
+  copyright:
+    text: '© 2023 Mo Maher. All rights reserved.'
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/slorksmo
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/slorksmo/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/slorksmo
+  generator: false
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+  - pymdownx.tilde
+plugins:
+  - search
+  - awesome-pages
