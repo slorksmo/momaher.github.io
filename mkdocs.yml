@@ -1,7 +1,6 @@
 site_name: My Docs
 theme:
   name: 'material'
-  custom_dir: null
   static_templates: []
   static_dir: 'overrides'
   include_search_page: false
