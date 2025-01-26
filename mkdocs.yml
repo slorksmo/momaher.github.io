@@ -6,6 +6,23 @@ theme:
   include_search_page: false
   search_index_only: false
   palette:
+    primary: 'indigo'
+    accent: 'indigo'  # 'indigo'  # 'blue' 
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange  
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: 'indigo'
