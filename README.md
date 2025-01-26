@@ -18,7 +18,7 @@ docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
 ```
-## the requirements
+## Requirements
 
 ```markdown
 requirements.txt   # This file contains the list of dependencies for this project.
