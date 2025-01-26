@@ -1,4 +1,5 @@
-site_name: My Docs
+site_name: Mo Maher - Personal Blog
+site_title: Mo Maher
 theme:
   name: 'material'
   static_templates: []
@@ -10,22 +11,16 @@ theme:
       scheme: default
       primary: 'indigo'
       accent: 'indigo'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: 'indigo'
       accent: 'indigo'
-    - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
+        name: Switch to light mode
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
