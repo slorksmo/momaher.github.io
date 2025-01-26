@@ -1,4 +1,4 @@
-# My Docs
+# My Blog
 
 This project uses MkDocs with the Material theme to generate documentation.
 
