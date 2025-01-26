@@ -1,6 +1,8 @@
 # Welcome to My Blog
 
-![Profile Picture](images/profile.jpg)  <!-- تأكد من وجود الصورة في المسار الصحيح -->
+<div style="text-align: center;">
+  <img src="images/profile.jpg" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;"/>
+</div>
 
 ## Table of Contents
 - [About Me](#about-me)
@@ -28,8 +30,8 @@ Here are some of my recent projects:
 Stay connected with me on social media:
 - [GitHub](https://github.com/slorksmo) :octocat:
 - [LinkedIn](https://www.linkedin.com/in/slorksmo/) :briefcase:
-- [Twitter](https://twitter.com/slorksmo) :bird:
-- [Facebook](https://www.facebook.com/yourprofile) :blue_heart:
+- [Twitter](https://twitter.com/mo_maher94) :bird:
+- [Facebook](https://www.facebook.com/maher94mo) :blue_heart:
 - [Discord](https://discord.com/invite/yourinvitecode) :speech_balloon:
 
 ## Contact
