@@ -55,7 +55,6 @@ plugins:
   - git-revision-date-localized:
       type: date
   - rss
-  - sitemap
 
 extra:
   analytics:
@@ -63,9 +62,9 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/momaher
+      link: https://github.com/slorksmo
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/mo_maher94
+      link: https://www.linkedin.com/in/momaher94
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/mo_maher94
   consent:
