@@ -116,7 +116,18 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -642,9 +653,9 @@
 <h2 id="get-in-touch">Get in Touch<a class="headerlink" href="#get-in-touch" title="Permanent link">&para;</a></h2>
 <p>You can reach me through any of the following channels:</p>
 <ul>
-<li>📧 Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/slorksmo/">Connect with me on LinkedIn</a></li>
-<li>🐦 Twitter: <a href="https://twitter.com/slorksmo">@slorksmo</a></li>
+<li>📧 Email: <a href="mailto:mo.maher74@elshi5.com">your.email@example.com</a></li>
+<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/momaher94/">Connect with me on LinkedIn</a></li>
+<li>🐦 Twitter: <a href="https://twitter.com/mo_maher94">@slorksmo</a></li>
 <li>💻 GitHub: <a href="https://github.com/slorksmo">slorksmo</a></li>
 </ul>
 <h2 id="contact-form">Contact Form<a class="headerlink" href="#contact-form" title="Permanent link">&para;</a></h2>
@@ -734,6 +745,21 @@ button[type="submit"]:hover {
 
     
     
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:mo.maher74@elshi5.com">Momaher</a>
+    </nav>
+  </span>
+
     
     
   </aside>
@@ -840,7 +866,7 @@ button[type="submit"]:hover {
 
 
 <h4>Cookie consent</h4>
-<p></p>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
 <input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -886,5 +912,5 @@ button[type="submit"]:hover {
       <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

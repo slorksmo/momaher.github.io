@@ -118,7 +118,18 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -822,7 +833,7 @@
 <h1 id="my-portfolio">My Portfolio<a class="headerlink" href="#my-portfolio" title="Permanent link">&para;</a></h1>
 <h2 id="featured-projects">Featured Projects<a class="headerlink" href="#featured-projects" title="Permanent link">&para;</a></h2>
 <h3 id="project-1-project-name">Project 1: [Project Name]<a class="headerlink" href="#project-1-project-name" title="Permanent link">&para;</a></h3>
-<p><img alt="Project Screenshot" src="assets/images/project1.png" /></p>
+<p><a class="glightbox" href="assets/images/project1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Project Screenshot" src="assets/images/project1.png" /></a></p>
 <ul>
 <li><strong>Technologies</strong>: React, Node.js, MongoDB</li>
 <li><strong>Description</strong>: Brief description of the project and its impact</li>
@@ -830,7 +841,7 @@
 <li><a href="https://github.com/username/project1">View Project</a> | <a href="https://project1.com">Live Demo</a></li>
 </ul>
 <h3 id="project-2-project-name">Project 2: [Project Name]<a class="headerlink" href="#project-2-project-name" title="Permanent link">&para;</a></h3>
-<p><img alt="Project Screenshot" src="assets/images/project2.png" /></p>
+<p><a class="glightbox" href="assets/images/project2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Project Screenshot" src="assets/images/project2.png" /></a></p>
 <ul>
 <li><strong>Technologies</strong>: Python, Django, PostgreSQL</li>
 <li><strong>Description</strong>: Brief description of the project and its impact</li>
@@ -912,6 +923,21 @@
 
     
     
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:mo.maher74@elshi5.com">Momaher</a>
+    </nav>
+  </span>
+
     
     
   </aside>
@@ -1018,7 +1044,7 @@
 
 
 <h4>Cookie consent</h4>
-<p></p>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
 <input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -1064,5 +1090,5 @@
       <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
