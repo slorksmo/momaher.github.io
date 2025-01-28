@@ -1,11 +1,35 @@
 site_name: Mo Maher - Personal Blog
 site_title: Mo Maher
+site_description: Personal blog of Mo Maher - Software Engineer and Tech Enthusiast
+site_author: Mo Maher
+site_url: https://momaher.github.io
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
+  - Portfolio: portfolio.md
+  - Resume: resume.md
+  - Achievements: achievements.md
+  - Contact: contact.md
 theme:
   name: 'material'
   static_templates: []
   static_dir: 'overrides'
-  include_search_page: false
+  include_search_page: true
   search_index_only: false
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.language
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -25,17 +49,55 @@ theme:
     text: 'Merriweather Sans'
     code: 'Red Hat Mono'
   icon:
-    logo: 'images/logo.png'  # Path to your logo image
+    logo: 'images/logo.png'
     repo: fontawesome/brands/github
-  favicon: 'images/favicon.ico'  # Path to your favicon
-  logo: 'images/logo.png'  # Path to your logo image
-  feature:
-    tabs: true
+  favicon: 'images/favicon.ico'
+  logo: 'images/logo.png'
   language: 'en'
   direction: 'ltr'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: العربية
+      link: /ar/
+      lang: ar
   copyright:
-    text: '© 2023 Mo Maher. All rights reserved.'
+    text: ' 2023 Mo Maher. All rights reserved.'
+
+plugins:
+  - search
+  - tags
+  - social
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - git-revision-date-localized:
+      type: date
+  - blog
+  - rss
+  - sitemap
+  - pwa:
+      enabled: true
+      offline_mode: true
+      cache:
+        precache:
+          - /assets/images/**/*
+          - /assets/javascripts/**/*
+          - /assets/stylesheets/**/*
+  - search:
+      lang:
+        - en
+        - ar
+
 extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/slorksmo
@@ -43,12 +105,54 @@ extra:
       link: https://www.linkedin.com/in/slorksmo/
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/slorksmo
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   generator: false
+  comments:
+    enabled: true
+    provider: giscus
+    repo: slorksmo/momaher.github.io
+    repo_id: YOUR_REPOSITORY_ID
+    category: Comments
+    category_id: YOUR_CATEGORY_ID
+    mapping: pathname
+  social_share:
+    enabled: true
+    providers:
+      - twitter
+      - linkedin
+      - facebook
+      - email
+
 markdown_extensions:
   - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-plugins:
-  - search
-  - awesome-pages
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
