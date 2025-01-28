@@ -1,8 +1,8 @@
 site_name: Mo Maher - Personal Blog
-site_title: Mo Maher
 site_description: Personal blog of Mo Maher - Software Engineer and Tech Enthusiast
 site_author: Mo Maher
 site_url: https://momaher.github.io
+
 nav:
   - Home: index.md
   - Blog: blog/index.md
@@ -10,12 +10,9 @@ nav:
   - Resume: resume.md
   - Achievements: achievements.md
   - Contact: contact.md
+
 theme:
   name: 'material'
-  static_templates: []
-  static_dir: 'overrides'
-  include_search_page: true
-  search_index_only: false
   features:
     - navigation.instant
     - navigation.tracking
@@ -48,51 +45,18 @@ theme:
   font:
     text: 'Merriweather Sans'
     code: 'Red Hat Mono'
-  icon:
-    logo: 'images/logo.png'
-    repo: fontawesome/brands/github
-  favicon: 'images/favicon.ico'
-  logo: 'images/logo.png'
   language: 'en'
   direction: 'ltr'
-  i18n:
-    prev: 'Previous'
-    next: 'Next'
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: العربية
-      link: /ar/
-      lang: ar
-  copyright:
-    text: ' 2023 Mo Maher. All rights reserved.'
 
 plugins:
   - search
   - tags
+  - blog
   - social
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
   - git-revision-date-localized:
       type: date
-  - blog
   - rss
   - sitemap
-  - pwa:
-      enabled: true
-      offline_mode: true
-      cache:
-        precache:
-          - /assets/images/**/*
-          - /assets/javascripts/**/*
-          - /assets/stylesheets/**/*
-  - search:
-      lang:
-        - en
-        - ar
 
 extra:
   analytics:
@@ -107,12 +71,6 @@ extra:
       link: https://twitter.com/slorksmo
   consent:
     title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-  generator: false
   comments:
     enabled: true
     provider: giscus
@@ -152,7 +110,5 @@ markdown_extensions:
   - pymdownx.tilde
   - tables
   - footnotes
-  - pymdownx.arithmatex:
-      generic: true
   - toc:
       permalink: true

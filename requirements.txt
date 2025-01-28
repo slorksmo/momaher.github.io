@@ -1,3 +1,12 @@
-mkdocs
-mkdocs-material
-mkdocs-awesome-pages-plugin
+mkdocs==1.6.1
+mkdocs-material==9.5.3
+mkdocs-awesome-pages-plugin==2.9.2
+mkdocs-git-revision-date-localized-plugin==1.2.2
+mkdocs-rss-plugin==1.12.1
+mkdocs-blog-plugin==1.1.1
+mkdocs-social-plugin==0.1.1
+mkdocs-glightbox==0.3.5
+mkdocs-git-authors-plugin==0.7.2
+mkdocs-static-i18n==1.2.0
+pillow==10.2.0
+cairosvg==2.7.1
