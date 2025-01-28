@@ -7,5 +7,6 @@ mkdocs-blog-plugin==0.25
 mkdocs-glightbox==0.3.5
 mkdocs-git-authors-plugin==0.7.2
 mkdocs-static-i18n==1.2.0
+mkdocs-sitemap-plugin==2.0.2
 pillow==10.2.0
 cairosvg==2.7.1
