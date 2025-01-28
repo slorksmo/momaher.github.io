@@ -10,8 +10,8 @@ description: Personal website and blog of Mo Maher
         <p class="subtitle">Software Engineer & Tech Enthusiast</p>
         <div class="social-links">
             <a href="https://github.com/slorksmo" target="_blank" title="GitHub"><span class="twemoji">{% include ".icons/fontawesome/brands/github.svg" %}</span></a>
-            <a href="https://linkedin.com/in/slorksmo" target="_blank" title="LinkedIn"><span class="twemoji">{% include ".icons/fontawesome/brands/linkedin.svg" %}</span></a>
-            <a href="https://twitter.com/slorksmo" target="_blank" title="Twitter"><span class="twemoji">{% include ".icons/fontawesome/brands/twitter.svg" %}</span></a>
+            <a href="https://linkedin.com/in/momaher94" target="_blank" title="LinkedIn"><span class="twemoji">{% include ".icons/fontawesome/brands/linkedin.svg" %}</span></a>
+            <a href="https://twitter.com/mo_maher94" target="_blank" title="Twitter"><span class="twemoji">{% include ".icons/fontawesome/brands/twitter.svg" %}</span></a>
         </div>
     </div>
 </div>

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<style>
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 1.5rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social-links a {
+    color: var(--md-default-fg-color--light);
+    transition: color 0.2s;
+  }
+  .social-links a:hover {
+    color: var(--md-accent-fg-color);
+  }
+  .grid.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .grid.cards > * {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+</style>
+{% endblock %}

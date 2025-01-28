@@ -27,6 +27,8 @@ theme:
     - content.code.annotation
     - content.code.copy
     - header.autohide
+  icon:
+    logo: material/code-braces
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -47,6 +49,7 @@ theme:
     code: 'Red Hat Mono'
   language: 'en'
   direction: 'ltr'
+  custom_dir: 'docs/overrides'
 
 plugins:
   - search
@@ -98,15 +101,17 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - tables
+  - footnotes
   - def_list
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - tables
-  - footnotes
   - toc:
       permalink: true
