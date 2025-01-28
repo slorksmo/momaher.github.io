@@ -67,11 +67,6 @@ plugins:
       categories:
         - categories
         - tags
-  - static-i18n:
-      default_language: en
-      languages:
-        en: English
-        ar: العربية
 
 extra:
   analytics:
