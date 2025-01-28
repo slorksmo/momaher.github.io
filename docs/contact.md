@@ -11,9 +11,9 @@ I'm always interested in hearing from readers, potential collaborators, or anyon
 
 You can reach me through any of the following channels:
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
-- 💼 LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/slorksmo/)
-- 🐦 Twitter: [@slorksmo](https://twitter.com/slorksmo)
+- 📧 Email: [your.email@example.com](mailto:mo.maher74@elshi5.com)
+- 💼 LinkedIn: [Connect with me on LinkedIn](https://www.linkedin.com/in/momaher94/)
+- 🐦 Twitter: [@slorksmo](https://twitter.com/mo_maher94)
 - 💻 GitHub: [slorksmo](https://github.com/slorksmo)
 
 ## Contact Form

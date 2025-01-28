@@ -17,6 +17,15 @@
 - 🌐 مشاركة على وسائل التواصل الاجتماعي
 - 💬 نظام التعليقات (Giscus)
 - 📊 تكامل مع Google Analytics
+- **Modern Design**: Clean and responsive layout with Material Design aesthetics
+- **Dark/Light Mode**: Automatic theme switching based on system preferences
+- **Interactive UI**: Smooth animations and hover effects
+- **Optimized Icons**: Using Google's Material Icons for better performance
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Blog Section**: Technical articles and tutorials
+- **Portfolio**: Showcase of projects and achievements
+- **Skills Section**: Visual representation of technical skills
+- **Social Links**: Easy access to professional profiles
 
 ## التثبيت
 
@@ -74,6 +83,11 @@ mkdocs build
 - MkDocs v1.6.1
 - MkDocs Material theme v9.5.3
 - وإضافات MkDocs متنوعة لوظائف إضافية
+- MkDocs (v1.5.3)
+- Material for MkDocs (v9.5.3)
+- Google Material Icons
+- Custom CSS Animations
+- Modern Web Technologies (HTML5, CSS3)
 
 للقائمة الكاملة من المتطلبات، راجع ملف `requirements.txt`
 
