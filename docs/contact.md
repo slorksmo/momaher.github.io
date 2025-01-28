@@ -19,34 +19,15 @@ You can reach me through any of the following channels:
 ## Contact Form
 
 <div class="contact-form">
-    <form action="https://formspree.io/f/xanqopdk" method="POST" enctype="multipart/form-data">
+    <form action="https://formspree.io/f/xanqopdk" method="POST">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Your Email</label>
             <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
         </div>
         
         <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Message subject" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-        </div>
-
-        <div class="form-group file-upload">
-            <label for="upload">
-                <span class="material-icons">attach_file</span>
-                Attachment
-            </label>
-            <input type="file" id="upload" name="upload" class="file-input">
-            <div class="file-name">No file chosen</div>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
         </div>
         
         <button type="submit" class="submit-btn">
@@ -102,45 +83,6 @@ You can reach me through any of the following channels:
     opacity: 0.7;
 }
 
-/* File Upload Styling */
-.file-upload {
-    position: relative;
-}
-
-.file-upload label {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.75rem 1.5rem;
-    background: var(--md-code-bg-color);
-    border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.file-upload label:hover {
-    border-color: var(--md-primary-fg-color);
-}
-
-.file-upload .material-icons {
-    margin-right: 0.5rem;
-}
-
-.file-upload .file-input {
-    position: absolute;
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.file-upload .file-name {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--md-default-fg-color--light);
-}
-
 .submit-btn {
     display: inline-flex;
     align-items: center;
@@ -154,6 +96,7 @@ You can reach me through any of the following channels:
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .submit-btn:hover {
@@ -183,29 +126,13 @@ You can reach me through any of the following channels:
         padding: 1.5rem;
         margin: 1rem;
     }
-    
-    .submit-btn {
-        width: 100%;
-    }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.contact-form form');
-    const fileInput = document.querySelector('.file-input');
-    const fileName = document.querySelector('.file-name');
-
-    // Update file name when file is selected
-    fileInput.addEventListener('change', function() {
-        if (this.files.length > 0) {
-            fileName.textContent = this.files[0].name;
-        } else {
-            fileName.textContent = 'No file chosen';
-        }
-    });
-
-    // Form submission handling
+    
     form.addEventListener('submit', function(e) {
         const button = this.querySelector('button[type="submit"]');
         button.disabled = true;
