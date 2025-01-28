@@ -52,7 +52,6 @@ plugins:
   - search
   - tags
   - blog
-  - social
   - git-revision-date-localized:
       type: date
   - rss
@@ -64,20 +63,20 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/slorksmo
+      link: https://github.com/momaher
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/slorksmo/
+      link: https://www.linkedin.com/in/mo_maher94
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/slorksmo
+      link: https://twitter.com/mo_maher94
   consent:
     title: Cookie consent
   comments:
     enabled: true
     provider: giscus
-    repo: slorksmo/momaher.github.io
-    repo_id: YOUR_REPOSITORY_ID
-    category: Comments
-    category_id: YOUR_CATEGORY_ID
+    repo: momaher/momaher.github.io
+    repo_id: # سيتم إضافته لاحقاً بعد إنشاء المستودع
+    category: Announcements
+    category_id: # سيتم إضافته لاحقاً بعد إعداد Giscus
     mapping: pathname
   social_share:
     enabled: true
