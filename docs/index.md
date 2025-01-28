@@ -7,183 +7,445 @@ description: Personal website and blog of Mo Maher
 
 <div class="hero">
     <div class="hero-content">
-        <img src="assets/images/profile.jpg" alt="Mo Maher" class="profile-image">
-        <h1>Mo Maher</h1>
-        <p class="subtitle">Software Engineer & Tech Enthusiast</p>
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <img src="assets/images/profile.jpg" alt="Mo Maher" class="profile-image">
+            </div>
+            <h1 class="name">Mo Maher</h1>
+            <p class="subtitle">Software Engineer & Tech Enthusiast</p>
+        </div>
         <div class="social-links">
-            <a href="https://github.com/slorksmo" target="_blank" rel="noopener">
-                <span class="twemoji">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                </span>
+            <a href="https://github.com/slorksmo" class="social-link github" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                <span class="material-icons">code</span>
                 <span class="label">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/momaher94" target="_blank" rel="noopener">
-                <span class="twemoji">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                </span>
+            <a href="https://linkedin.com/in/momaher94" class="social-link linkedin" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                <span class="material-icons">integration_instructions</span>
                 <span class="label">LinkedIn</span>
             </a>
-            <a href="https://twitter.com/mo_maher94" target="_blank" rel="noopener">
-                <span class="twemoji">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-                </span>
+            <a href="https://twitter.com/mo_maher94" class="social-link twitter" target="_blank" rel="noopener" aria-label="Twitter Profile">
+                <span class="material-icons">cloud</span>
                 <span class="label">Twitter</span>
             </a>
         </div>
     </div>
 </div>
 
-## Featured Articles
-
-<div class="grid cards" markdown>
-
-- [:fontawesome-solid-cloud:{ .lg .middle } __Building Scalable Systems__](blog/posts/building-scalable-systems.md)
-
-    ---
-    Learn about best practices and patterns for building scalable software systems.
-
-- [:fontawesome-solid-microchip:{ .lg .middle } __Cloud Native Applications__](blog/posts/cloud-native-apps.md)
-
-    ---
-    Explore modern cloud-native application development principles.
-
-</div>
-
-## Latest Projects
-
-<div class="grid cards" markdown>
-
-- [:fontawesome-solid-code:{ .lg .middle } __Project 1__](portfolio/project1.md)
-
-    ---
-    Description of your first featured project.
-
-- [:fontawesome-solid-database:{ .lg .middle } __Project 2__](portfolio/project2.md)
-
-    ---
-    Description of your second featured project.
-
-</div>
-
-## Technical Skills
-
-- [:fontawesome-brands-python:{ .lg } Python](){ .skill }
-- [:fontawesome-brands-js:{ .lg } JavaScript](){ .skill }
-- [:fontawesome-brands-docker:{ .lg } Docker](){ .skill }
-- [:fontawesome-brands-aws:{ .lg } AWS](){ .skill }
-- [:fontawesome-brands-git:{ .lg } Git](){ .skill }
-
-## Get in Touch
-
-[:fontawesome-regular-envelope:{ .lg } Feel free to contact me](contact.md) for collaborations or questions!
-
 <style>
 .hero {
     text-align: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--md-primary-fg-color--light) 0%, var(--md-primary-fg-color) 100%);
+    color: var(--md-primary-bg-color);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.profile-container {
+    margin-bottom: 2rem;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.05);
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 4px solid var(--md-primary-bg-color);
+    transition: transform 0.3s ease;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: var(--md-default-fg-color--light);
-    margin-bottom: 1.5rem;
+    color: var(--md-primary-bg-color);
+    opacity: 0.9;
+    margin-bottom: 2rem;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.social-links a {
+.social-link {
     display: flex;
     align-items: center;
-    color: var(--md-default-fg-color--light);
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    color: var(--md-primary-bg-color);
     text-decoration: none;
-    transition: color 0.2s;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
-.social-links a:hover {
+.social-link:hover {
+    background: var(--md-primary-bg-color);
     color: var(--md-primary-fg-color);
-    background: var(--md-code-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.social-links .twemoji {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-.social-links .twemoji svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-}
-
-.social-links .label {
-    font-size: 1rem;
-}
-
-.lg {
+.social-link .material-icons {
     font-size: 1.5rem;
+    margin-right: 0.75rem;
 }
 
-.middle {
-    vertical-align: middle;
+.social-link .label {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.skill {
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--md-code-bg-color);
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--md-default-fg-color);
+/* Social link specific colors on hover */
+.social-link.github:hover {
+    background: #24292e;
+    color: #fff;
 }
 
-.skill:hover {
-    background: var(--md-code-fg-color);
-    color: var(--md-code-bg-color);
+.social-link.linkedin:hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+.social-link.twitter:hover {
+    background: #1da1f2;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+        margin: 1rem 0;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .social-link {
+        justify-content: center;
+    }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .hero {
+    background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, var(--md-primary-fg-color) 100%);
+}
+
+[data-md-color-scheme="slate"] .social-link {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="slate"] .profile-image-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+}
+</style>
+
+## Featured Articles
+
+<div class="featured-section">
+    <div class="grid cards" markdown>
+        <div class="card">
+            <span class="material-icons card-icon">article</span>
+            [__Building Scalable Systems__](blog/posts/building-scalable-systems.md)
+            ---
+            Learn about best practices and patterns for building scalable software systems.
+            
+            <span class="material-icons card-arrow">arrow_forward</span>
+        </div>
+
+        <div class="card">
+            <span class="material-icons card-icon">memory</span>
+            [__Cloud Native Applications__](blog/posts/cloud-native-apps.md)
+            ---
+            Explore modern cloud-native application development principles.
+            
+            <span class="material-icons card-arrow">arrow_forward</span>
+        </div>
+    </div>
+</div>
+
+## Latest Projects
+
+<div class="featured-section">
+    <div class="grid cards" markdown>
+        <div class="card">
+            <span class="material-icons card-icon">code</span>
+            [__Project 1__](portfolio/project1.md)
+            ---
+            Description of your first featured project.
+            
+            <span class="material-icons card-arrow">arrow_forward</span>
+        </div>
+
+        <div class="card">
+            <span class="material-icons card-icon">storage</span>
+            [__Project 2__](portfolio/project2.md)
+            ---
+            Description of your second featured project.
+            
+            <span class="material-icons card-arrow">arrow_forward</span>
+        </div>
+    </div>
+</div>
+
+## Technical Skills
+
+<div class="skills-section">
+    <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skills-grid">
+            <a href="#" class="skill">
+                <span class="material-icons">code</span>
+                Python
+            </a>
+            <a href="#" class="skill">
+                <span class="material-icons">javascript</span>
+                JavaScript
+            </a>
+            <a href="#" class="skill">
+                <span class="material-icons">coffee</span>
+                Java
+            </a>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h3>Technologies & Tools</h3>
+        <div class="skills-grid">
+            <a href="#" class="skill">
+                <span class="material-icons">integration_instructions</span>
+                Docker
+            </a>
+            <a href="#" class="skill">
+                <span class="material-icons">cloud</span>
+                AWS
+            </a>
+            <a href="#" class="skill">
+                <span class="material-icons">merge</span>
+                Git
+            </a>
+        </div>
+    </div>
+</div>
+
+## Get in Touch
+
+<div class="contact-section">
+    <a href="contact.md">
+        <span class="material-icons contact-icon">mail</span>
+        Feel free to contact me for collaborations or questions!
+    </a>
+</div>
+
+<style>
+/* Add Material Icons Font */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Featured Sections Styling */
+.featured-section {
+    margin: 2rem 0;
 }
 
 .grid.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.card {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--md-code-bg-color);
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--md-primary-fg-color);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--md-primary-fg-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card h2 {
+    margin: 1rem 0;
+    color: var(--md-default-fg-color);
+}
+
+.card p {
+    color: var(--md-default-fg-color--light);
+}
+
+.card-arrow {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--md-primary-fg-color);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Skills Section Styling */
+.skills-section {
+    margin: 2rem 0;
+}
+
+.skill-category {
+    margin: 2rem 0;
+}
+
+.skill-category h3 {
+    color: var(--md-default-fg-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
 }
 
-.grid.cards > * {
+.skill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background: var(--md-code-bg-color);
+    border-radius: 2rem;
+    color: var(--md-default-fg-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
     border: 1px solid var(--md-default-fg-color--lightest);
-    border-radius: 0.5rem;
-    padding: 1rem;
 }
 
+.skill:hover {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    transform: translateY(-2px);
+}
+
+.skill .material-icons {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: var(--md-code-bg-color);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .social-links {
-        flex-direction: column;
-        align-items: center;
+    .grid.cards {
+        grid-template-columns: 1fr;
     }
-    
-    .social-links a {
-        width: 100%;
+
+    .skills-grid {
         justify-content: center;
     }
+
+    .skill {
+        width: calc(50% - 1rem);
+        justify-content: center;
+    }
+}
+
+/* Dark Mode Adjustments */
+[data-md-color-scheme="slate"] .card {
+    background: var(--md-code-bg-color);
+    border-color: var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] .card:hover {
+    border-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .contact-section {
+    background: var(--md-code-bg-color);
 }
 </style>

@@ -58,7 +58,20 @@ plugins:
   - blog
   - git-revision-date-localized:
       type: date
-  - rss
+  - git-authors
+  - glightbox
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  - static-i18n:
+      default_language: en
+      languages:
+        en: English
+        ar: العربية
 
 extra:
   analytics:
@@ -73,13 +86,18 @@ extra:
       link: https://twitter.com/mo_maher94
   consent:
     title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   comments:
     enabled: true
     provider: giscus
     repo: momaher/momaher.github.io
-    repo_id: # سيتم إضافته لاحقاً بعد إنشاء المستودع
+    repo_id: # Will be added after repository creation
     category: Announcements
-    category_id: # سيتم إضافته لاحقاً بعد إعداد Giscus
+    category_id: # Will be added after Giscus setup
     mapping: pathname
   social_share:
     enabled: true
