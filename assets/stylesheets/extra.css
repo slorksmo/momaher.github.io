@@ -89,15 +89,19 @@
 
 /* Custom button styles */
 .md-button {
+    display: inline-block;
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s ease;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
     background: linear-gradient(45deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
     border: none;
-    color: white;
+    color: white !important;
     font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .md-button::before {
@@ -108,17 +112,40 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+    z-index: -1;
+    transition: opacity 0.4s ease;
     opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .md-button:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    color: white !important;
+    text-decoration: none;
 }
 
 .md-button:hover::before {
     opacity: 1;
+}
+
+.md-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure button text is always visible */
+.card .md-button {
+    margin-top: 1rem;
+    display: inline-block;
+    width: auto;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Add hover state for card buttons specifically */
+.card:hover .md-button {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Profile image styles */
@@ -146,6 +173,9 @@
     position: relative;
     padding: 3rem 0;
     margin: 2rem 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .timeline::before {
@@ -163,36 +193,292 @@
     animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
-}
-
 .timeline-item {
     margin: 2rem 0;
     position: relative;
-    width: 50%;
+    width: calc(50% - 2rem);
     padding: 2rem;
     background: rgba(var(--md-primary-fg-color--rgb), 0.05);
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     transition: all 0.3s ease;
+    border: 1px solid rgba(var(--md-primary-fg-color--rgb), 0.1);
 }
 
 .timeline-item:nth-child(odd) {
     left: 0;
-    transform: translateX(-2rem);
+    transform: translateX(-1rem);
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
-    transform: translateX(2rem);
+    transform: translateX(3rem);
 }
 
 .timeline-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    border-color: var(--md-accent-fg-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.3rem;
+}
+
+.timeline-item p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.timeline-item .md-button {
+    margin-top: 1rem;
+    opacity: 1;
+    transform: none;
+    transition: all 0.4s ease;
+}
+
+.timeline-item:hover .md-button {
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for timeline */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 2rem;
+    }
+    
+    .timeline-item {
+        width: calc(100% - 4rem);
+        margin-left: 4rem;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        transform: translateX(0);
+    }
+    
+    .timeline-item:hover {
+        transform: translateX(0.5rem);
+    }
+}
+
+/* About section styles */
+.about-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.profile-sidebar {
+    position: sticky;
+    top: 2rem;
+    background: rgba(var(--md-primary-fg-color--rgb), 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(var(--md-primary-fg-color--rgb), 0.1);
+    height: fit-content;
+}
+
+.profile-sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(120deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 0;
+}
+
+.profile-info {
+    margin-top: 1.5rem;
+}
+
+.profile-info h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--md-typeset-color);
+}
+
+.profile-link:hover {
     background: rgba(var(--md-primary-fg-color--rgb), 0.1);
+    transform: translateX(5px);
+}
+
+.main-content {
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-sidebar {
+        position: relative;
+        top: 0;
+    }
+}
+
+/* Blog styles */
+.post-card {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(var(--md-primary-fg-color--rgb), 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--md-accent-fg-color);
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.post-date {
+    color: var(--md-accent-fg-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.post-tag {
+    background: rgba(var(--md-accent-fg-color--rgb), 0.1);
+    color: var(--md-accent-fg-color);
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.post-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--md-primary-fg-color);
+}
+
+.post-card h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.post-card h2 a:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.post-card p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    color: var(--md-typeset-color);
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    color: white !important;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.read-more:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.category-card {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(var(--md-primary-fg-color--rgb), 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--md-accent-fg-color);
+}
+
+.category-card h3 {
+    margin: 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.3rem;
+}
+
+.category-card p {
+    margin: 1rem 0 0;
+    color: var(--md-typeset-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .post-card {
+        padding: 1.5rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 /* Animation classes */
