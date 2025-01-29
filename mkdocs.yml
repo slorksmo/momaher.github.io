@@ -1,7 +1,7 @@
 site_name: Mo Maher - Personal Blog
 site_description: Personal blog of Mo Maher - Software Engineer and Tech Enthusiast
 site_author: Mo Maher
-site_url: https://momaher.github.io
+site_url: https://blog.momaher.site
 
 nav:
   - Home: index.md
