@@ -8,64 +8,121 @@ description: Personal website and blog of Mo Maher
 <div class="animate-fade-in">
     <div class="grid-container">
         <div class="card animate-scale">
-            <h3>:fontawesome-solid-wand-magic-sparkles: Creative Developer</h3>
-            <p>Turning complex ideas into elegant solutions through creative coding and innovative thinking.</p>
+            <h3>:fontawesome-solid-code: Full Stack Developer</h3>
+            <p>Specializing in Python, JavaScript, and cloud technologies with 5+ years of experience.</p>
         </div>
         <div class="card animate-scale" style="animation-delay: 0.2s">
-            <h3>:fontawesome-solid-pen-fancy: Tech Writer</h3>
-            <p>Sharing knowledge and experiences through engaging technical content and tutorials.</p>
+            <h3>:fontawesome-solid-cloud: Cloud Architect</h3>
+            <p>Designing and implementing scalable solutions on AWS and Google Cloud Platform.</p>
         </div>
         <div class="card animate-scale" style="animation-delay: 0.4s">
-            <h3>:fontawesome-solid-rocket: Innovation</h3>
-            <p>Always exploring new technologies and pushing the boundaries of what's possible.</p>
+            <h3>:fontawesome-solid-graduation-cap: Tech Educator</h3>
+            <p>Contributing to the developer community through articles, tutorials, and open source.</p>
         </div>
     </div>
 </div>
 
-## About Me { .animate-slide-up }
-
-<div class="animate-fade-in" style="animation-delay: 0.6s">
-<img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-image" width="250">
-
-I'm a passionate Software Engineer who loves creating amazing digital experiences. My expertise includes:
-
-- :simple-python: **Python Development** - Building scalable applications and automation tools
-- :simple-javascript: **Modern Web Development** - Creating responsive and interactive web applications
-- :simple-docker: **DevOps & Cloud** - Implementing efficient deployment pipelines
-- :simple-linux: **Open Source** - Contributing to and maintaining open source projects
+<div class="about-section animate-fade-in">
+    <div class="profile-sidebar">
+        <div class="profile-image-container">
+            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-image">
+        </div>
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>Senior Software Engineer with expertise in building scalable web applications and distributed systems. Currently focused on cloud-native solutions and DevOps practices.</p>
+            
+            <h3>:octicons-info-16: Quick Facts</h3>
+            <ul class="profile-facts">
+                <li>:octicons-briefcase-16: Senior Software Engineer at Tech Solutions Inc.</li>
+                <li>:octicons-location-16: Cairo, Egypt</li>
+                <li>:octicons-mortar-board-16: B.Sc. in Computer Science</li>
+                <li>:octicons-code-16: Python, JavaScript, Go</li>
+                <li>:octicons-cloud-16: AWS Certified Solutions Architect</li>
+            </ul>
+            
+            <h3>:simple-github: GitHub Activity</h3>
+            <img src="https://github-readme-stats.vercel.app/api?username=momaher&show_icons=true&theme=transparent" alt="GitHub Stats" class="github-stats">
+            
+            <h3>:octicons-tools-16: Tech Stack</h3>
+            <div class="tech-stack">
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+                <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+            </div>
+            
+            <div class="profile-links">
+                <a href="https://github.com/momaher" class="profile-link">
+                    :simple-github: GitHub
+                </a>
+                <a href="https://linkedin.com/in/momaher94" class="profile-link">
+                    :simple-linkedin: LinkedIn
+                </a>
+                <a href="https://twitter.com/mo_maher94" class="profile-link">
+                    :simple-twitter: Twitter
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/projects/cloudops-dashboard.png" alt="CloudOps Dashboard">
+                </div>
+                <h3>:fontawesome-solid-cloud: CloudOps Dashboard</h3>
+                <p>A modern dashboard for monitoring and managing cloud infrastructure. Built with React and integrates with multiple cloud providers.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+                <a href="#" class="md-button">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/projects/data-pipeline.png" alt="Data Pipeline Framework">
+                </div>
+                <h3>:fontawesome-solid-database: Data Pipeline Framework</h3>
+                <p>An efficient ETL framework for processing large-scale data. Supports real-time processing and multiple data sources.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Apache Kafka</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <a href="#" class="md-button">Explore</a>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/projects/api-gateway.png" alt="API Gateway Service">
+                </div>
+                <h3>:fontawesome-solid-network-wired: API Gateway Service</h3>
+                <p>A high-performance API Gateway with built-in authentication, rate limiting, and monitoring capabilities.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                </div>
+                <a href="#" class="md-button">Learn More</a>
+            </div>
+        </div>
+        
+        <h2>Latest Articles</h2>
+        <div class="articles-preview">
+            <a href="blog/posts/building-scalable-systems/" class="article-card">
+                <h3>Building Scalable Systems: A Comprehensive Guide</h3>
+                <p>Learn the key principles and best practices for building highly scalable distributed systems.</p>
+                <span class="read-more">Read More →</span>
+            </a>
+        </div>
+    </div>
 </div>
-
-## Latest Articles { .animate-slide-up }
-
-<div class="grid-container">
-    <div class="card animate-scale" style="animation-delay: 0.8s">
-        <h3>:fontawesome-solid-book: Modern Web Development</h3>
-        <p>Exploring the latest trends and best practices in web development.</p>
-        <a href="/blog/modern-web-dev" class="md-button">Read More</a>
-    </div>
-    <div class="card animate-scale" style="animation-delay: 1s">
-        <h3>:fontawesome-solid-microchip: AI & Machine Learning</h3>
-        <p>Diving into the world of artificial intelligence and its applications.</p>
-        <a href="/blog/ai-ml-guide" class="md-button">Read More</a>
-    </div>
-</div>
-
-## Featured Projects { .animate-slide-up }
-
-<div class="timeline">
-    <div class="timeline-item animate-scale" style="animation-delay: 1.2s">
-        <h3>:fontawesome-solid-star: Project Nova</h3>
-        <p>A revolutionary project that pushes the boundaries of modern web development.</p>
-        <a href="/portfolio/project-nova" class="md-button">Learn More</a>
-    </div>
-    <div class="timeline-item animate-scale" style="animation-delay: 1.4s">
-        <h3>:fontawesome-solid-bolt: Project Lightning</h3>
-        <p>High-performance computing solution for complex data processing.</p>
-        <a href="/portfolio/project-lightning" class="md-button">Explore</a>
-    </div>
-</div>
-
-[View All Projects](portfolio.md){ .md-button .animate-scale }
 
 <style>
 /* Add Material Icons Font */
@@ -311,5 +368,151 @@ I'm a passionate Software Engineer who loves creating amazing digital experience
     background: var(--md-accent-fg-color);
     color: var(--md-accent-bg-color);
     transform: translateY(-2px);
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.profile-sidebar {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.profile-image-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 1rem;
+    background: var(--md-code-bg-color);
+    border-radius: 1rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.profile-info h2 {
+    margin-top: 0;
+}
+
+.profile-links {
+    margin-top: 1rem;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.profile-link:hover {
+    color: var(--md-accent-fg-color);
+}
+
+.main-content {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.project-card {
+    padding: 1.5rem;
+    background: var(--md-code-bg-color);
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--md-primary-fg-color);
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-tech {
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--md-code-bg-color);
+    border-radius: 2rem;
+    color: var(--md-default-fg-color);
+    margin-right: 0.5rem;
+}
+
+.articles-preview {
+    margin-top: 2rem;
+}
+
+.article-card {
+    padding: 1.5rem;
+    background: var(--md-code-bg-color);
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--md-primary-fg-color);
+}
+
+.read-more {
+    font-size: 0.8rem;
+    color: var(--md-primary-fg-color);
+    margin-top: 0.5rem;
+    display: block;
 }
 </style>

@@ -9,23 +9,25 @@ Welcome to my technical blog where I share insights, tutorials, and experiences 
 
 ## Latest Posts
 
-{%- for post in blog.posts %}
 <div class="post-card">
     <div class="post-meta">
-        <span class="post-date">{{ post.date }}</span>
-        {% for tag in post.tags %}
-        <span class="post-tag">{{ tag }}</span>
-        {% endfor %}
+        <span class="post-date">January 28, 2024</span>
+        <span class="post-tag">System Design</span>
+        <span class="post-tag">Architecture</span>
+        <span class="post-tag">Cloud</span>
     </div>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.description }}</p>
-    <a href="{{ post.url }}" class="read-more">Read More →</a>
+    <h2><a href="posts/building-scalable-systems/">Building Scalable Systems: A Comprehensive Guide</a></h2>
+    <p>Learn the key principles and best practices for building highly scalable distributed systems. This guide covers everything from basic concepts to advanced patterns.</p>
+    <a href="posts/building-scalable-systems/" class="read-more">Read More →</a>
 </div>
-{%- endfor %}
 
 ## Categories
 
 <div class="categories-grid">
+    <a href="categories/system-design/" class="category-card">
+        <h3>System Design</h3>
+        <p>Articles about scalability, distributed systems, and architecture patterns</p>
+    </a>
     <a href="categories/cloud-computing/" class="category-card">
         <h3>Cloud Computing</h3>
         <p>Articles about AWS, GCP, Azure, and cloud architecture</p>
@@ -33,10 +35,6 @@ Welcome to my technical blog where I share insights, tutorials, and experiences 
     <a href="categories/web-development/" class="category-card">
         <h3>Web Development</h3>
         <p>Frontend and backend development tutorials</p>
-    </a>
-    <a href="categories/devops/" class="category-card">
-        <h3>DevOps</h3>
-        <p>CI/CD, containers, and infrastructure as code</p>
     </a>
     <a href="categories/programming/" class="category-card">
         <h3>Programming</h3>
