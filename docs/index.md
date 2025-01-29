@@ -3,124 +3,102 @@ title: Mo Maher - Software Engineer & Tech Enthusiast
 description: Personal website and blog of Mo Maher
 ---
 
-# Welcome to My Digital Space
+# Welcome to My Blog! 👋
 
-<div class="animate-fade-in">
-    <div class="grid-container">
-        <div class="card animate-scale">
-            <h3>:fontawesome-solid-code: Full Stack Developer</h3>
-            <p>Specializing in Python, JavaScript, and cloud technologies with 5+ years of experience.</p>
-        </div>
-        <div class="card animate-scale" style="animation-delay: 0.2s">
-            <h3>:fontawesome-solid-cloud: Cloud Architect</h3>
-            <p>Designing and implementing scalable solutions on AWS and Google Cloud Platform.</p>
-        </div>
-        <div class="card animate-scale" style="animation-delay: 0.4s">
-            <h3>:fontawesome-solid-graduation-cap: Tech Educator</h3>
-            <p>Contributing to the developer community through articles, tutorials, and open source.</p>
-        </div>
-    </div>
-</div>
-
-<div class="about-section animate-fade-in">
-    <div class="profile-sidebar">
-        <div class="profile-image-container">
-            <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-image">
-        </div>
-        <div class="profile-info">
-            <h2>About Me</h2>
-            <p>Senior Software Engineer with expertise in building scalable web applications and distributed systems. Currently focused on cloud-native solutions and DevOps practices.</p>
-            
-            <h3>:octicons-info-16: Quick Facts</h3>
-            <ul class="profile-facts">
-                <li>:octicons-briefcase-16: Senior Software Engineer at Tech Solutions Inc.</li>
-                <li>:octicons-location-16: Cairo, Egypt</li>
-                <li>:octicons-mortar-board-16: B.Sc. in Computer Science</li>
-                <li>:octicons-code-16: Python, JavaScript, Go</li>
-                <li>:octicons-cloud-16: AWS Certified Solutions Architect</li>
-            </ul>
-            
-            <h3>:simple-github: GitHub Activity</h3>
-            <img src="https://github-readme-stats.vercel.app/api?username=momaher&show_icons=true&theme=transparent" alt="GitHub Stats" class="github-stats">
-            
-            <h3>:octicons-tools-16: Tech Stack</h3>
-            <div class="tech-stack">
-                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-                <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-                <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+<div class="page-layout">
+    <!-- Sidebar with About Me -->
+    <div class="sidebar">
+        <div class="profile-sidebar animate-fade-in">
+            <div class="profile-image-container">
+                <img src="assets/images/profile.jpg" alt="Mo Maher" class="profile-image">
             </div>
-            
-            <div class="profile-links">
-                <a href="https://github.com/momaher" class="profile-link">
-                    :simple-github: GitHub
-                </a>
-                <a href="https://linkedin.com/in/momaher94" class="profile-link">
-                    :simple-linkedin: LinkedIn
-                </a>
-                <a href="https://twitter.com/mo_maher94" class="profile-link">
-                    :simple-twitter: Twitter
-                </a>
+            <div class="profile-info">
+                <h2>Mo Maher</h2>
+                <p>Software Engineer</p>
+                
+                <h3>:octicons-location-16: Location</h3>
+                <p>Cairo, Egypt</p>
+                
+                <h3>:octicons-tools-16: Tech Stack</h3>
+                <div class="tech-stack">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" alt="React">
+                    <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js">
+                    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker">
+                </div>
+                
+                <div class="profile-links">
+                    <a href="https://github.com/momaher" class="profile-link">
+                        :octicons-mark-github-16: GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/momaher" class="profile-link">
+                        :octicons-link-16: LinkedIn
+                    </a>
+                    <a href="mailto:contact@momaher.com" class="profile-link">
+                        :octicons-mail-16: Email
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Main Content -->
     <div class="main-content">
-        <h2>Featured Projects</h2>
-        
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/projects/cloudops-dashboard.png" alt="CloudOps Dashboard">
-                </div>
-                <h3>:fontawesome-solid-cloud: CloudOps Dashboard</h3>
-                <p>A modern dashboard for monitoring and managing cloud infrastructure. Built with React and integrates with multiple cloud providers.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">AWS</span>
-                </div>
-                <a href="#" class="md-button">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/projects/data-pipeline.png" alt="Data Pipeline Framework">
-                </div>
-                <h3>:fontawesome-solid-database: Data Pipeline Framework</h3>
-                <p>An efficient ETL framework for processing large-scale data. Supports real-time processing and multiple data sources.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Apache Kafka</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                </div>
-                <a href="#" class="md-button">Explore</a>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="assets/images/projects/api-gateway.png" alt="API Gateway Service">
-                </div>
-                <h3>:fontawesome-solid-network-wired: API Gateway Service</h3>
-                <p>A high-performance API Gateway with built-in authentication, rate limiting, and monitoring capabilities.</p>
-                <div class="project-tech">
-                    <span class="tech-tag">Go</span>
-                    <span class="tech-tag">Redis</span>
-                    <span class="tech-tag">Docker</span>
-                </div>
-                <a href="#" class="md-button">Learn More</a>
-            </div>
+        <div class="hero-section animate-fade-in">
+            <p>
+                Welcome to my personal blog! Here, I share my experiences, insights, and knowledge about software development,
+                cloud architecture, and technology trends.
+            </p>
         </div>
-        
-        <h2>Latest Articles</h2>
-        <div class="articles-preview">
-            <a href="blog/posts/building-scalable-systems/" class="article-card">
-                <h3>Building Scalable Systems: A Comprehensive Guide</h3>
-                <p>Learn the key principles and best practices for building highly scalable distributed systems.</p>
-                <span class="read-more">Read More →</span>
-            </a>
-        </div>
+
+        <section class="featured-projects animate-fade-in">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud-Native Application</h3>
+                        <p>A scalable microservices architecture built with Kubernetes and Docker.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Go</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Analytics</h3>
+                        <p>Real-time data analytics platform using machine learning algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-articles animate-fade-in">
+            <h2>Latest Articles</h2>
+            <div class="articles-preview">
+                <a href="blog/posts/building-scalable-systems/" class="article-card">
+                    <h3>Building Scalable Systems</h3>
+                    <p>Learn about the principles and practices for building highly scalable distributed systems.</p>
+                    <div class="article-meta">
+                        <span class="date">January 25, 2024</span>
+                        <span class="read-time">10 min read</span>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div>
 </div>
 
@@ -514,5 +492,37 @@ description: Personal website and blog of Mo Maher
     color: var(--md-primary-fg-color);
     margin-top: 0.5rem;
     display: block;
+}
+
+.page-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.sidebar {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.main-content {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .main-content {
+        width: 100%;
+    }
 }
 </style>

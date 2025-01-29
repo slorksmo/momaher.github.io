@@ -681,3 +681,40 @@
         gap: 1rem;
     }
 }
+
+/* Page Layout */
+.page-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+    .page-layout {
+        grid-template-columns: 250px 1fr;
+        gap: 1.5rem;
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .page-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        position: static;
+        max-width: 300px;
+        margin: 0 auto 2rem;
+    }
+}
