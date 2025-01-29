@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://momaher.github.io/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/achievements/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/achievements/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/contact/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/contact/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/portfolio/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/portfolio/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/resume/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/resume/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/blog/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/blog/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/blog/2024/01/28/building-scalable-systems---a-comprehensive-guide/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/blog/2024/01/28/building-scalable-systems---a-comprehensive-guide/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/blog/archive/2024/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/blog/archive/2024/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/blog/category/system-design/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/blog/category/system-design/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://momaher.github.io/blog/category/architecture/</loc>
-         <lastmod>2025-01-28</lastmod>
+         <loc>https://blog.momaher.site/blog/category/architecture/</loc>
+         <lastmod>2025-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
