@@ -578,53 +578,54 @@
 
 <h1 id="welcome-to-my-blog">Welcome to My Blog! 👋<a class="headerlink" href="#welcome-to-my-blog" title="Permanent link">&para;</a></h1>
 <div class="page-layout">
-    <!-- Sidebar with About Me -->
-    <div class="sidebar">
-        <div class="profile-sidebar animate-fade-in">
-            <div class="profile-image-container">
-                <a class="glightbox" href="assets/images/profile.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="assets/images/profile.jpg" alt="Mo Maher" class="profile-image"></a>
-            </div>
-            <div class="profile-info">
+    <aside class="sidebar">
+        <div class="about-card">
+            <div class="about-header">
+                <div class="profile-image">
+                    <a class="glightbox" href="assets/images/profile.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="assets/images/profile.jpg" alt="Mo Maher"></a>
+                </div>
                 <h2>Mo Maher</h2>
-                <p>Software Engineer</p>
+                <p class="title">Software Engineer</p>
+            </div>
 
-                <h3>:octicons-location-16: Location</h3>
-                <p>Cairo, Egypt</p>
-
-                <h3>:octicons-tools-16: Tech Stack</h3>
-                <div class="tech-stack">
-                    <a class="glightbox" href="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python"></a>
-                    <a class="glightbox" href="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript"></a>
-                    <a class="glightbox" href="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" alt="React"></a>
-                    <a class="glightbox" href="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js"></a>
-                    <a class="glightbox" href="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker"></a>
+            <div class="about-content">
+                <div class="info-item">
+                    <span class="icon">:octicons-location-16:</span>
+                    <span>Cairo, Egypt</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">:octicons-briefcase-16:</span>
+                    <span>5+ Years Experience</span>
                 </div>
 
-                <div class="profile-links">
-                    <a href="https://github.com/momaher" class="profile-link">
-                        :octicons-mark-github-16: GitHub
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/momaher" class="social-link">
+                        <span class="icon">:octicons-mark-github-16:</span>
+                        <span>GitHub</span>
                     </a>
-                    <a href="https://linkedin.com/in/momaher" class="profile-link">
-                        :octicons-link-16: LinkedIn
-                    </a>
-                    <a href="mailto:contact@momaher.com" class="profile-link">
-                        :octicons-mail-16: Email
+                    <a href="https://linkedin.com/in/momaher" class="social-link">
+                        <span class="icon">:octicons-link-16:</span>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </aside>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="hero-section animate-fade-in">
-            <p>
-                Welcome to my personal blog! Here, I share my experiences, insights, and knowledge about software development,
-                cloud architecture, and technology trends.
-            </p>
-        </div>
+    <main class="main-content">
+        <p class="intro">
+            Welcome to my personal blog! Here, I share my experiences, insights, and knowledge about software development,
+            cloud architecture, and technology trends.
+        </p>
 
-        <section class="featured-projects animate-fade-in">
+        <section class="featured-projects">
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
@@ -634,33 +635,19 @@
                     <div class="project-content">
                         <h3>Cloud-Native Application</h3>
                         <p>A scalable microservices architecture built with Kubernetes and Docker.</p>
-                        <div class="project-tech">
+                        <div class="tech-tags">
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Go</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <a class="glightbox" href="assets/images/project2.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="assets/images/project2.jpg" alt="Project 2"></a>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI-Powered Analytics</h3>
-                        <p>Real-time data analytics platform using machine learning algorithms.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section class="latest-articles animate-fade-in">
+        <section class="latest-articles">
             <h2>Latest Articles</h2>
-            <div class="articles-preview">
+            <div class="article-grid">
                 <a href="blog/posts/building-scalable-systems/" class="article-card">
                     <h3>Building Scalable Systems</h3>
                     <p>Learn about the principles and practices for building highly scalable distributed systems.</p>
@@ -671,430 +658,131 @@
                 </a>
             </div>
         </section>
-    </div>
+    </main>
 </div>
 
 <style>
-/* Add Material Icons Font */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
-/* Featured Sections Styling */
-.featured-section {
-    margin: 2rem 0;
-}
-
-.grid.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.card {
-    position: relative;
-    padding: 1.5rem;
-    background: var(--md-code-bg-color);
-    border-radius: 0.8rem;
-    transition: all 0.3s ease;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--md-primary-fg-color);
-}
-
-.card-icon {
-    font-size: 2.5rem;
-    color: var(--md-primary-fg-color);
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.card h2 {
-    margin: 1rem 0;
-    color: var(--md-default-fg-color);
-}
-
-.card p {
-    color: var(--md-default-fg-color--light);
-}
-
-.card-arrow {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    color: var(--md-primary-fg-color);
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
-}
-
-.card:hover .card-arrow {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Skills Section Styling */
-.skills-section {
-    margin: 2rem 0;
-}
-
-.skill-category {
-    margin: 2rem 0;
-}
-
-.skill-category h3 {
-    color: var(--md-default-fg-color);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.skill {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.75rem 1.25rem;
-    background: var(--md-code-bg-color);
-    border-radius: 2rem;
-    color: var(--md-default-fg-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.skill:hover {
-    background: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-    transform: translateY(-2px);
-}
-
-.skill .material-icons {
-    margin-right: 0.5rem;
-    font-size: 1.2rem;
-}
-
-/* Contact Section Styling */
-.contact-section {
-    text-align: center;
-    margin: 3rem 0;
-    padding: 2rem;
-    background: var(--md-code-bg-color);
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-}
-
-.contact-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section a {
-    display: inline-flex;
-    align-items: center;
-    color: var(--md-primary-fg-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.contact-section a:hover {
-    color: var(--md-accent-fg-color);
-}
-
-.contact-icon {
-    margin-right: 0.5rem;
-    font-size: 1.5rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .grid.cards {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
-        justify-content: center;
-    }
-
-    .skill {
-        width: calc(50% - 1rem);
-        justify-content: center;
-    }
-}
-
-/* Dark Mode Adjustments */
-[data-md-color-scheme="slate"] .card {
-    background: var(--md-code-bg-color);
-    border-color: var(--md-default-fg-color--lightest);
-}
-
-[data-md-color-scheme="slate"] .card:hover {
-    border-color: var(--md-primary-fg-color);
-}
-
-[data-md-color-scheme="slate"] .contact-section {
-    background: var(--md-code-bg-color);
-}
-
-/* New Styles */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.animate-fade-in {
-    animation: fade-in 1s;
-}
-
-.animate-slide-up {
-    animation: slide-up 1s;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slide-up {
-    from {
-        transform: translateY(20px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background: var(--md-code-bg-color);
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-}
-
-.timeline-item {
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    background: var(--md-code-bg-color);
-    border-radius: 0.8rem;
-    transition: all 0.3s ease;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.timeline-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--md-primary-fg-color);
-}
-
-.md-button {
-    display: inline-block;
-    padding: 0.75rem 1.25rem;
-    background: var(--md-primary-fg-color);
-    color: var(--md-primary-bg-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border-radius: 2rem;
-}
-
-.md-button:hover {
-    background: var(--md-accent-fg-color);
-    color: var(--md-accent-bg-color);
-    transform: translateY(-2px);
-}
-
-.about-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem 0;
-}
-
-.profile-sidebar {
-    width: 30%;
-    margin-right: 2rem;
-}
-
-.profile-image-container {
-    width: 100%;
-    height: 200px;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-.profile-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.profile-info {
-    padding: 1rem;
-    background: var(--md-code-bg-color);
-    border-radius: 1rem;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.profile-info h2 {
-    margin-top: 0;
-}
-
-.profile-links {
-    margin-top: 1rem;
-}
-
-.profile-link {
-    display: inline-block;
-    margin-right: 1rem;
-    color: var(--md-primary-fg-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.profile-link:hover {
-    color: var(--md-accent-fg-color);
-}
-
-.main-content {
-    width: 70%;
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-    }
-
-    .profile-sidebar {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.project-card {
-    padding: 1.5rem;
-    background: var(--md-code-bg-color);
-    border-radius: 0.8rem;
-    transition: all 0.3s ease;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--md-primary-fg-color);
-}
-
-.project-image {
-    width: 100%;
-    height: 150px;
-    border-radius: 0.8rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-tech {
-    margin-top: 1rem;
-}
-
-.tech-tag {
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    background: var(--md-code-bg-color);
-    border-radius: 2rem;
-    color: var(--md-default-fg-color);
-    margin-right: 0.5rem;
-}
-
-.articles-preview {
-    margin-top: 2rem;
-}
-
-.article-card {
-    padding: 1.5rem;
-    background: var(--md-code-bg-color);
-    border-radius: 0.8rem;
-    transition: all 0.3s ease;
-    border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.article-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--md-primary-fg-color);
-}
-
-.read-more {
-    font-size: 0.8rem;
-    color: var(--md-primary-fg-color);
-    margin-top: 0.5rem;
-    display: block;
-}
-
 .page-layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .sidebar {
-    width: 30%;
-    margin-right: 2rem;
+    position: sticky;
+    top: 2rem;
 }
 
-.main-content {
-    width: 70%;
+.about-card {
+    background: var(--md-primary-fg-color--light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, var(--md-primary-fg-color--light), white);
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-header h2 {
+    margin: 0;
+    color: var(--md-primary-fg-color);
+    font-size: 1.5rem;
+}
+
+.about-header .title {
+    color: var(--md-primary-fg-color);
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+.about-content {
+    padding: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--md-typeset-color);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.skill-tag {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.1);
+    color: var(--md-primary-fg-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--md-typeset-color);
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(var(--md-primary-fg-color--rgb), 0.1);
+    color: var(--md-primary-fg-color);
+}
+
+.intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--md-typeset-color);
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
     .page-layout {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 1rem;
     }
 
     .sidebar {
-        width: 100%;
-        margin-right: 0;
+        position: static;
         margin-bottom: 2rem;
-    }
-
-    .main-content {
-        width: 100%;
     }
 }
 </style>
