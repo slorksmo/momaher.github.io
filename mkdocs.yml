@@ -20,7 +20,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - navigation.language
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -28,26 +28,26 @@ theme:
     - content.code.copy
     - header.autohide
   icon:
-    logo: material/code-braces
+    logo: material/rocket-launch
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: pink
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: pink
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: 'Poppins'
+    code: 'Fira Code'
   language: en
   direction: ltr
   custom_dir: docs/overrides
@@ -102,6 +102,9 @@ extra:
       - facebook
       - email
 
+extra_css:
+  - assets/stylesheets/extra.css
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -112,11 +115,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
   - tables
