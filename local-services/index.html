@@ -606,8 +606,18 @@
 
 <div class="services-dashboard">
     <div class="dashboard-header">
-        <h1>لوحة التحكم بالخدمات المحلية</h1>
+        <h1 class="main-title">لوحة التحكم بالخدمات المحلية</h1>
         <p class="dashboard-subtitle">مراقبة وإدارة الخدمات المحلية على السيرفر</p>
+        <div class="server-info">
+            <div class="server-badge proxmox">
+                <span class="server-icon">🖥️</span>
+                <span>Proxmox Server</span>
+            </div>
+            <div class="server-badge casaos">
+                <span class="server-icon">🏠</span>
+                <span>CasaOS</span>
+            </div>
+        </div>
     </div>
 
     <div class="services-grid">
@@ -748,6 +758,48 @@
     padding: 2rem;
     background: var(--bg-color);
     min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.server-info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.server-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.server-badge.proxmox {
+    background: linear-gradient(135deg, #ff6b6b, #ee5253);
+    color: white;
+}
+
+.server-badge.casaos {
+    background: linear-gradient(135deg, #4834d4, #686de0);
+    color: white;
+}
+
+.server-icon {
+    font-size: 1.4rem;
 }
 
 .dashboard-header {
@@ -768,17 +820,24 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
 }
 
 .service-card {
     background: var(--card-bg);
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 20px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
 .service-card:hover {
@@ -863,9 +922,11 @@
 
 .system-metrics {
     background: var(--card-bg);
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .system-metrics h2 {
@@ -875,8 +936,9 @@
 
 .metrics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .metric-card {
@@ -907,11 +969,26 @@
         padding: 1rem;
     }
 
-    .dashboard-header h1 {
+    .main-title {
         font-size: 2rem;
     }
 
     .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .server-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .server-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .metrics-grid {
         grid-template-columns: 1fr;
     }
 }
