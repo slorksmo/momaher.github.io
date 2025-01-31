@@ -3,44 +3,70 @@ title: Mo Maher - Software Engineer & Tech Enthusiast
 description: Personal website and blog of Mo Maher
 ---
 
-# Welcome to My Blog! 👋
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="animated-title">مرحباً! أنا محمد ماهر 👋</h1>
+        <p class="hero-subtitle">مهندس برمجيات متخصص في تطوير حلول تقنية مبتكرة</p>
+    </div>
+</div>
 
 <div class="page-layout">
     <aside class="sidebar">
-        <div class="about-card">
-            <div class="about-header">
-                <div class="profile-image">
-                    <img src="assets/images/profile.jpg" alt="Mo Maher">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="profile-image-wrapper">
+                    <img src="assets/images/profile.jpg" alt="Mo Maher" class="profile-image">
                 </div>
-                <h2>Mo Maher</h2>
-                <p class="title">Software Engineer</p>
+                <h2 class="profile-name">Mo Maher</h2>
+                <p class="profile-title">Software Engineer</p>
             </div>
             
-            <div class="about-content">
-                <div class="info-item">
-                    <span class="icon">:octicons-location-16:</span>
-                    <span>Cairo, Egypt</span>
-                </div>
-                <div class="info-item">
-                    <span class="icon">:octicons-briefcase-16:</span>
-                    <span>5+ Years Experience</span>
-                </div>
-                
-                <div class="skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
+            <div class="profile-content">
+                <div class="info-section">
+                    <div class="info-item">
+                        <span class="icon">:octicons-location-16:</span>
+                        <span>Cairo, Egypt</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">:octicons-briefcase-16:</span>
+                        <span>5+ Years Experience</span>
+                    </div>
                 </div>
                 
-                <div class="social-links">
-                    <a href="https://github.com/momaher" class="social-link">
+                <div class="skills-section">
+                    <h3>Core Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-icon">🐍</span>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">⚛️</span>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">📱</span>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-icon">☁️</span>
+                            <span class="skill-name">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-section">
+                    <a href="https://github.com/momaher" class="social-button github">
                         <span class="icon">:octicons-mark-github-16:</span>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://linkedin.com/in/momaher" class="social-link">
+                    <a href="https://linkedin.com/in/momaher" class="social-button linkedin">
                         <span class="icon">:octicons-link-16:</span>
                         <span>LinkedIn</span>
+                    </a>
+                    <a href="/local-services" class="social-button services">
+                        <span class="icon">:octicons-server-16:</span>
+                        <span>Local Services</span>
                     </a>
                 </div>
             </div>
@@ -48,22 +74,20 @@ description: Personal website and blog of Mo Maher
     </aside>
 
     <main class="main-content">
-        <p class="intro">
-            Welcome to my personal blog! Here, I share my experiences, insights, and knowledge about software development,
-            cloud architecture, and technology trends.
-        </p>
-
         <section class="featured-projects">
-            <h2>Featured Projects</h2>
+            <h2 class="section-title">مشاريع مميزة</h2>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="assets/images/project1.jpg" alt="Project 1">
+                        <img src="assets/images/project1.jpg" alt="Cloud-Native Application">
+                        <div class="project-overlay">
+                            <span class="view-project">عرض المشروع</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Cloud-Native Application</h3>
-                        <p>A scalable microservices architecture built with Kubernetes and Docker.</p>
-                        <div class="tech-tags">
+                        <p>تطبيق قابل للتطوير مبني على هيكلية Microservices باستخدام Kubernetes و Docker</p>
+                        <div class="tech-stack">
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Go</span>
@@ -74,14 +98,18 @@ description: Personal website and blog of Mo Maher
         </section>
 
         <section class="latest-articles">
-            <h2>Latest Articles</h2>
-            <div class="article-grid">
+            <h2 class="section-title">أحدث المقالات</h2>
+            <div class="articles-grid">
                 <a href="blog/posts/building-scalable-systems/" class="article-card">
-                    <h3>Building Scalable Systems</h3>
-                    <p>Learn about the principles and practices for building highly scalable distributed systems.</p>
-                    <div class="article-meta">
-                        <span class="date">January 25, 2024</span>
-                        <span class="read-time">10 min read</span>
+                    <div class="article-content">
+                        <span class="article-category">System Design</span>
+                        <h3>Building Scalable Systems</h3>
+                        <p>تعلم المبادئ والممارسات لبناء أنظمة موزعة عالية القابلية للتطوير.</p>
+                        <div class="article-meta">
+                            <span class="date">January 25, 2024</span>
+                            <span class="separator">•</span>
+                            <span class="read-time">10 min read</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -90,127 +118,239 @@ description: Personal website and blog of Mo Maher
 </div>
 
 <style>
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #1976d2;
+    --text-color: #333;
+    --bg-color: #fff;
+    --card-bg: #ffffff;
+    --hover-color: #e3f2fd;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.animated-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
 .page-layout {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
-.sidebar {
-    position: sticky;
-    top: 2rem;
-}
-
-.about-card {
-    background: var(--md-primary-fg-color--light);
-    border-radius: 12px;
+.profile-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.about-header {
-    text-align: center;
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
     padding: 2rem;
-    background: linear-gradient(to bottom, var(--md-primary-fg-color--light), white);
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
 }
 
-.profile-image {
+.profile-image-wrapper {
     width: 120px;
     height: 120px;
     margin: 0 auto 1rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
 }
 
-.profile-image img {
+.profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.about-header h2 {
-    margin: 0;
-    color: var(--md-primary-fg-color);
-    font-size: 1.5rem;
-}
-
-.about-header .title {
-    color: var(--md-primary-fg-color);
-    margin: 0.5rem 0 0;
-    font-size: 1.1rem;
-}
-
-.about-content {
+.profile-content {
     padding: 1.5rem;
 }
 
-.info-item {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.8rem;
-    color: var(--md-typeset-color);
+    padding: 0.5rem;
+    background: var(--hover-color);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
 }
 
-.skills {
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.social-button {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    margin: 1.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: transform 0.2s ease;
 }
 
-.skill-tag {
-    background: rgba(var(--md-primary-fg-color--rgb), 0.1);
-    color: var(--md-primary-fg-color);
+.social-button.github {
+    background: #24292e;
+}
+
+.social-button.linkedin {
+    background: #0077b5;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project {
+    color: white;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.article-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-category {
+    display: inline-block;
     padding: 0.3rem 0.8rem;
+    background: var(--primary-color);
+    color: white;
     border-radius: 15px;
     font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-top: 1.5rem;
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
 }
 
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--md-typeset-color);
-    text-decoration: none;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: rgba(var(--md-primary-fg-color--rgb), 0.1);
-    color: var(--md-primary-fg-color);
-}
-
-.intro {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--md-typeset-color);
-    margin-bottom: 3rem;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
     .page-layout {
         grid-template-columns: 1fr;
-        padding: 1rem;
     }
     
-    .sidebar {
-        position: static;
-        margin-bottom: 2rem;
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .animated-title {
+        font-size: 2rem;
     }
 }
 </style>
