@@ -10,6 +10,7 @@ nav:
   - Resume: resume.md
   - Achievements: achievements.md
   - Contact: contact.md
+  - Local Services: local-services.md
 
 theme:
   name: material
