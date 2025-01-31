@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://blog.momaher.site/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/achievements/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/contact/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://blog.momaher.site/local-services/</loc>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/portfolio/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/resume/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/blog/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/blog/2024/01/28/building-scalable-systems---a-comprehensive-guide/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/blog/archive/2024/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/blog/category/system-design/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://blog.momaher.site/blog/category/architecture/</loc>
-         <lastmod>2025-01-29</lastmod>
+         <lastmod>2025-01-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
