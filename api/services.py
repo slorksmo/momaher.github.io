@@ -3,16 +3,48 @@ from pydantic import BaseModel
 import psutil
 import docker
 import subprocess
+import requests
 from typing import Dict, List
+from proxmoxer import ProxmoxAPI
+from redis import Redis
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+# Proxmox configuration
+PROXMOX_HOST = os.getenv('PROXMOX_HOST')
+PROXMOX_USER = os.getenv('PROXMOX_USER')
+PROXMOX_PASSWORD = os.getenv('PROXMOX_PASSWORD')
+
+# CasaOS configuration
+CASAOS_API_URL = os.getenv('CASAOS_API_URL', 'http://localhost:80')
+CASAOS_API_KEY = os.getenv('CASAOS_API_KEY')
 
 app = FastAPI()
 
-# Docker client
+# Initialize clients
 try:
     docker_client = docker.from_env()
 except Exception as e:
     print(f"Warning: Could not connect to Docker: {e}")
     docker_client = None
+
+try:
+    proxmox = ProxmoxAPI(PROXMOX_HOST, user=PROXMOX_USER, password=PROXMOX_PASSWORD, verify_ssl=False)
+except Exception as e:
+    print(f"Warning: Could not connect to Proxmox: {e}")
+    proxmox = None
+
+def get_casaos_status():
+    try:
+        headers = {'Authorization': f'Bearer {CASAOS_API_KEY}'}
+        response = requests.get(f'{CASAOS_API_URL}/api/v1/status', headers=headers)
+        return response.json()
+    except Exception as e:
+        print(f"Warning: Could not connect to CasaOS: {e}")
+        return None
 
 class ServiceStatus(BaseModel):
     status: str
@@ -27,6 +59,43 @@ class SystemMetrics(BaseModel):
 async def get_services_status():
     """Get status of all services"""
     services = {}
+    
+    # Get Proxmox status
+    if proxmox:
+        try:
+            nodes = proxmox.nodes.get()
+            vms = []
+            containers = []
+            for node in nodes:
+                vms.extend(proxmox.nodes(node['node']).qemu.get())
+                containers.extend(proxmox.nodes(node['node']).lxc.get())
+            
+            services["proxmox"] = {
+                "status": "running",
+                "details": {
+                    "nodes": len(nodes),
+                    "vms": len(vms),
+                    "containers": len(containers)
+                }
+            }
+        except:
+            services["proxmox"] = {
+                "status": "error",
+                "details": {}
+            }
+    
+    # Get CasaOS status
+    casaos_status = get_casaos_status()
+    if casaos_status:
+        services["casaos"] = {
+            "status": "running",
+            "details": casaos_status
+        }
+    else:
+        services["casaos"] = {
+            "status": "error",
+            "details": {}
+        }
     
     # Docker status
     if docker_client:
